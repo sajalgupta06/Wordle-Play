@@ -8,7 +8,7 @@ const LetterSquare = (props) => {
       activeClass = ' active';
     }
     return (
-      <Col className={`letterSquare pt-2 ${result}${activeClass}`} style={{ color: 'white', fontWeight: 600 }}>{ letter || null }</Col>
+      <Col className={`letterSquare pt-2 ${result}${activeClass}`} style={{ fontWeight: 600 }}>{ letter || null }</Col>
     );
   };
 

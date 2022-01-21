@@ -1,9 +1,20 @@
 .App {
   text-align: center;
   position: relative;
+  margin-top: 3rem;
+  background: #89CFF0;
+  border-radius: 3rem;
+  padding: 2rem;
+  box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1);
 }
 body {
-	background: #CBDCEF;
+
+	height: 100%;
+    background: linear-gradient(180deg, #2186f2 35%, #fff 50%);
+	color: white;
+}
+h1{
+font-size: 5rem	;		
 }
 html, body {
 	height: 100%;
@@ -15,8 +26,11 @@ html, body {
 .letterSquare {
 	width: 48px;
 	height: 48px;
-	border: 1px solid #ACACAC;
-	background-color: #333;
+	margin: 1rem;
+	border-radius: 1rem;
+	color: #2186f2;
+	background-color: #fff;
+	box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1);
 }
 @media (max-width:767px) {
 	.letterSquare {
@@ -25,97 +39,38 @@ html, body {
 }
 
 
+
+
 .wrong-spot {
 	background-color: goldenrod;
+	color: white;
 }
 .right-spot {
 	background-color: green;
+	color: white;
 }
 .no-spot {
 	background-color: #666;
+	color: white;
 }
 .active {
-	border: 1px solid yellow;
+	border: 1px solid #2186f2;
 	background: #ACACAC;
+	transition: all 0.3s ease;
 }
 #root, #root > div {
 	height: 100%;
 }
 .result-message {
 	width: 100%;
-	padding: 1rem;
+	padding: 1.5rem;
 	text-align: center;
-	background: maroon;
+	background: #EF0107;
 	margin: 0;
 	font-weight: 600;
 	color: white;
-}
-.keyButton {
-	background-color: #DEDEDE;
-	cursor: pointer;
-	min-width: 1.25rem;
-	margin-left: 4px;
-	margin-right: 4px;
-}
-@media (min-width: 353px) {
-	.keyButton {
-		min-width: 1.35rem;
-	}
-}
-@media (min-width: 360px) {
-	.keyButton {
-		min-width: 1.4rem;
-		margin-left: 4px;
-		margin-right: 4px;
-	}
-}
-@media (min-width: 380px) {
-	.keyButton {
-		min-width: 1.5rem;
-	}
-}
-@media (min-width: 400px) {
-	.keyButton {
-		min-width: 1.625rem;
-	}
-}
-@media (min-width: 420px) {
-	.keyButton {
-		min-width: 1.75rem;
-	}
-}
-@media (min-width: 460px) {
-	.keyButton {
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-}
-@media (min-width: 480px) {
-	.keyButton {
-		margin-left: 6px;
-		margin-right: 6px;
-	}
-}
-@media (min-width: 576px) {
-	.keyButton {
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-}
-@media (max-width: 338px) {
-	.keyButton {
-		margin-left: 3px;
-		margin-right: 3px;
-	}
-}
-.keyButton[data-result="right"] {
-	background-color: green;
-}
-.keyButton[data-result="wrong"] {
-	background-color: goldenrod;
-}
-.keyButton[data-result="none"] {
-	background-color: #666;
+	border-radius: 3rem;
+
 }
 .opacity-0 {
 	opacity: 0;
@@ -134,7 +89,4 @@ html, body {
 	top: calc(50% - 50px);
 	left: calc(50% - 150px);
 	font-weight: 600;
-}
-.keyButton.actionKey {
-	background: rgb(90,200,210);
 }
