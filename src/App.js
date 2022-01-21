@@ -214,14 +214,14 @@ const App = () => {
     <Container
       fluid="sm"
       tabIndex={1}
-      className="h-100 text-center  md-3 pt-lg-4 px-0 px-sm-4"
+      className="h-100 text-center  md-3 pt-lg-4 px-0 px-sm-4 topDiv"
     >
       <header className="d-sm-none d-md-block">
         <h5 className="mt-md-4 mt-lg-5">CodeFoster Presents</h5>
         <h1>Wordle <span style={{color:'#ff7f50'}}>Play</span></h1>
       </header>
       <div className="mainDiv">
-      <Container
+      <div
         className="App"
         style={{ maxWidth: "480px", }}
       >
@@ -236,7 +236,7 @@ const App = () => {
             </Col>
           </Row>
         )}
-      </Container>
+      </div>
 
       <Container
         className="App rules"
