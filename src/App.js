@@ -218,8 +218,9 @@ const App = () => {
     >
       <header className="d-sm-none d-md-block">
         <h5 className="mt-md-4 mt-lg-5">CodeFoster Presents</h5>
-        <h1>Wordle Play</h1>
+        <h1>Wordle <span style={{color:'#ff7f50'}}>Play</span></h1>
       </header>
+      <div className="mainDiv">
       <Container
         className="App"
         style={{ maxWidth: "480px", }}
@@ -236,6 +237,23 @@ const App = () => {
           </Row>
         )}
       </Container>
+
+      <Container
+        className="App rules"
+        style={{ maxWidth: "480px", }}
+      >
+        <h2 className="heading">Rules</h2>
+     <ol>
+       <li>Once the game is loaded  you can begin typing your first guess.  When you are ready, press enter. </li>
+       <li>If the cell becomes <span style={{color:"green"}}>green</span> that means the corresponsing letter is correct</li>
+       <li>If the cell becomes <span style={{color:"#daa520"}}>orange</span>  that means the corresponsing letter is in wrong place</li>
+       <li>If the cell becomes <span style={{color:"grey"}}>grey</span>  that means the corresponsing letter is not present</li>
+       <li>You will get 6 trials to guess the correct word</li>
+
+     </ol>
+        
+      </Container>
+      </div>
     </Container>
   );
 };
