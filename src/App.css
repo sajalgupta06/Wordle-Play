@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+body {
+	background: #CBDCEF;
+}
+html, body {
+	height: 100%;
+}
+* {
+	outline: none;
+}
+
+.letterSquare {
+	width: 48px;
+	height: 48px;
+	border: 1px solid #ACACAC;
+	background-color: #333;
+}
+@media (max-width:767px) {
+	.letterSquare {
+		height: 40px;
+	}
+}
+
+
+.wrong-spot {
+	background-color: goldenrod;
+}
+.right-spot {
+	background-color: green;
+}
+.no-spot {
+	background-color: #666;
+}
+.active {
+	border: 1px solid yellow;
+	background: #ACACAC;
+}
+#root, #root > div {
+	height: 100%;
+}
+.result-message {
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	background: maroon;
+	margin: 0;
+	font-weight: 600;
+	color: white;
+}
+.keyButton {
+	background-color: #DEDEDE;
+	cursor: pointer;
+	min-width: 1.25rem;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+@media (min-width: 353px) {
+	.keyButton {
+		min-width: 1.35rem;
+	}
+}
+@media (min-width: 360px) {
+	.keyButton {
+		min-width: 1.4rem;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+}
+@media (min-width: 380px) {
+	.keyButton {
+		min-width: 1.5rem;
+	}
+}
+@media (min-width: 400px) {
+	.keyButton {
+		min-width: 1.625rem;
+	}
+}
+@media (min-width: 420px) {
+	.keyButton {
+		min-width: 1.75rem;
+	}
+}
+@media (min-width: 460px) {
+	.keyButton {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+@media (min-width: 480px) {
+	.keyButton {
+		margin-left: 6px;
+		margin-right: 6px;
+	}
+}
+@media (min-width: 576px) {
+	.keyButton {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+@media (max-width: 338px) {
+	.keyButton {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+}
+.keyButton[data-result="right"] {
+	background-color: green;
+}
+.keyButton[data-result="wrong"] {
+	background-color: goldenrod;
+}
+.keyButton[data-result="none"] {
+	background-color: #666;
+}
+.opacity-0 {
+	opacity: 0;
+}
+.opacity-90 {
+	opacity: .9;
+}
+.notification {
+	background: rgb(222,222,222,.9);
+	color: #633;
+	transition: opacity .25s;
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	padding: 2.5rem .5rem;
+	top: calc(50% - 50px);
+	left: calc(50% - 150px);
+	font-weight: 600;
+}
+.keyButton.actionKey {
+	background: rgb(90,200,210);
+}
